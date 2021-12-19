@@ -1,0 +1,62 @@
+$lineWidth: 32px;
+$lineHeight: 3px;
+
+$width: $lineWidth;
+$height: $lineHeight * 5;
+
+.nav-icon {
+    width: $width;
+    height: $height;
+
+    display: flex;
+	justify-content: center;
+	align-items: center;
+
+    cursor: pointer;
+}
+
+.nav-icon__middle {
+    position: relative;
+    width: $lineWidth;
+    height: $lineHeight;
+    background: #0066FF;
+    // transition: transform 0.2s ease-in 0.2s;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: $lineWidth;
+        height: $lineHeight;
+        // transition: transform 0.2s ease-out;
+        // transition: transform 0.6s cubic-bezier(.22,1,.36,1);
+
+
+        background: #0066FF;
+    }
+
+
+    &::before {
+        top: -8px;
+    }
+
+    &::after {
+        top: 8px;
+    }
+}
+
+/* Active state */
+
+.nav-icon.nav-icon--active .nav-icon__middle {
+
+    
+    transition: transform 0.2s ease-in 0.2s;
+    transition: transform 0.6s cubic-bezier(.22,1,.36,1);
+    transform: rotate(-90deg);
+
+    &::before, &::after {
+        // top: 0;
+        // transition: transform 0.2s ease-in 0.2s;
+    }
+
+}

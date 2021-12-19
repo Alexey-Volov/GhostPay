@@ -1,0 +1,41 @@
+.btn {
+    // display: inline-block;
+    width: 155px;
+    padding: 13px 22px;
+    background: #0066FF;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    font-family: Gilroy;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+    color: #FFFFFF;
+    transition: opacity 0.2s ease-in;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+.button {
+    width: 216px;
+    padding: 14px 55px;
+    background: #003686;
+    border-radius: 13px;
+
+    font-family: Gilroy;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.2;
+    border: none;
+    cursor: pointer;
+
+    color: #FFFFFF;
+
+    /* Mobile-2 */
+    @media (max-width: 991px) {
+        font-size: 21px;
+        line-height: 1.19;
+        color: #FFFFFF;
+    }
+}

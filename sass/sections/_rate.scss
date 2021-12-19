@@ -1,0 +1,163 @@
+.rate {
+    position: relative;
+    padding-top: 101px;
+    overflow: hidden;
+    padding-bottom: 101px;
+    background-color: #17191e;
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url("./../img/money-img/grafik.png");
+        left: 0;
+        top: 0;
+        width: 968px;
+        height: 968px;
+    }
+    
+    /* Mobile-2 */
+    @media (max-width: 1199px) {
+        &::after {
+            width: 0;
+            height: 0;
+        }
+        padding-top: 52px;
+        // padding-bottom: 62px;
+    }
+}
+.rate__title {
+    position: relative;
+    font-family: Gilroy;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.21;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 81px;
+    padding-bottom: 20px;
+    &::after {
+        position: absolute;
+        content: "";
+        background-color: #0066FF;
+        border-radius: 4.5px;
+        width: 135px;
+        height: 6px;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding-bottom: 10px;
+        font-size: 22px;
+        line-height: 1.22;
+        &::after {
+            width: 67px;
+            height: 3px;
+        }
+    }
+
+}
+.rate__row {
+    display: flex;
+    justify-content: center;
+    /* Mobile-2 */
+    @media (max-width: 991px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.rate__package {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    width: 402px;
+    background: #101215;
+    border-radius: 31px;
+    padding-top: 52px;
+    padding-right: 62px;
+    padding-left: 57px;
+    padding-bottom: 67px;
+
+    font-family: Gilroy;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    /* Mobile-2 */
+    @media (max-width: 991px) {
+        width: 335px;
+        padding-top: 44px;
+        padding-right: 51px;
+        padding-left: 47px;
+        padding-bottom: 56px;
+
+        font-size: 21px;
+        line-height: 1.19;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+    & + & {
+        margin-left: 61px;
+        /* Mobile-2 */
+        @media (max-width: 991px) {
+            margin-left: 0;
+            margin-top: 33px;
+        }
+    }
+}
+.rate__package-btn {
+    margin-bottom: 44px;
+    /* Mobile-2 */
+    @media (max-width: 991px) {
+        margin-bottom: 36px;
+
+    }
+}
+.rate__package-list {
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 50px;
+    li {
+        display: flex;
+        align-items: center;
+        margin-top: 22px;
+    }
+    & li:nth-child(-n+2) {
+        margin-top: 0px;
+    }
+    span {
+        margin-left: 21px;
+    }
+    /* Mobile-2 */
+    @media (max-width: 991px) {
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+.rate__package-desc {
+    margin-top: 55px;
+
+    font-family: Gilroy;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.19;
+    text-align: center;
+    color: #FFFFFF;
+    p + p {
+        margin-top: 28px;
+    }
+
+    /* Mobile-2 */
+    @media (max-width: 991px) {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 21px;
+    }
+}

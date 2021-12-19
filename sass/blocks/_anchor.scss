@@ -1,0 +1,28 @@
+.anchor {
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+    transform: translate(-96%, -89%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #0066FF;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.4s ease-in;
+    opacity: 0;
+    // padding: 22px;
+    /* Mobile-2 */
+    @media (max-width: 991px) {
+        width: 52px;
+        height: 52px;
+        img {
+            width: 25.4px;
+            height: 25.4px;
+        }
+    }
+}
